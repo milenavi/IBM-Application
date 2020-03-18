@@ -5,7 +5,7 @@ var ws = require("socket.io")(http);
 var cfenv = require('cfenv');
 var IoTApp  = require('./application/application.js');
 
-/* Serve the files out of ./public as our main files. */
+/* Serve the files out of ./public as our main files.. */
 app.use(express.static(__dirname + '/public'));
 
 /* 
