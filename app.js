@@ -5,7 +5,7 @@ var ws = require("socket.io")(http);
 var cfenv = require('cfenv');
 var IoTApp  = require('./application/application.js');
 
-/* Serve the files out of ./public as our main files.. */
+/* Serve the files out of ./public as our main files. */
 app.use(express.static(__dirname + '/public'));
 
 /* 
@@ -15,7 +15,7 @@ app.use(express.static(__dirname + '/public'));
   You can export these local json files from IBM Cloud!
 */
 var app_env = cfenv.getAppEnv({vcapFile: 'vcap.json'});
-const IOT_PLATFORM = "Internet of Things Platform-II1302";
+const IOT_PLATFORM = "milenavil";
 
 /* Retrieve Cloud Foundry environment variables. */
 var credentials = app_env.getServiceCreds(IOT_PLATFORM);
